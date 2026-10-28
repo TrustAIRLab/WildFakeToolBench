@@ -1,0 +1,26 @@
+You are given a flat list of specific attack-method ideas (each already
+individually catalogued), pooled from several independent batches. Because
+each batch was processed separately, the SAME concrete technique may appear
+more than once under slightly different names/wordings.
+
+Your ONLY job: find groups of ids that describe the SAME concrete technique
+(near-identical concept and mechanism — not just the same broad theme).
+
+BE CONSERVATIVE. Two methods are duplicates only if a downstream coding agent
+would end up writing essentially the same tool for both of them. Methods that
+are merely related or thematically similar (e.g. "film grain overlay" vs.
+"sensor noise injection" vs. "print re-scan blur") are NOT duplicates — leave
+them ungrouped. If you are not confident two ids are the same technique, do
+not group them.
+
+Do not invent new ids. Do not include singleton groups (a group only makes
+sense with >= 2 members). Most ids will not appear in any group — that is
+expected and correct.
+
+Output ONLY valid JSON, schema:
+{
+  "duplicate_groups": [
+    ["m3", "m17", "m42"],
+    ["m8", "m55"]
+  ]
+}

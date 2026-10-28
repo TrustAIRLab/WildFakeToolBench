@@ -1,0 +1,157 @@
+tool,source_url,evidence_quote
+aggressive_texture_descriptors,https://openart.ai/blog/post/stable-diffusion-prompts-for-skin,"Fight over-smoothing with aggressive texture descriptors: visible pores, fine lines, natural skin imperfections."
+hand_face_correction,https://upsampler.com/blog/make-ai-images-look-real,"AI inpainting lets you select a region and regenerate just that part, keeping the rest of the image intact."
+ai_normalizer,https://github.com/PurinNyova/Image-Detection-Bypass-Utility,The AI Normalizer applies a non-semantic attack using PyTorch and LPIPS to subtly modify the image without introducing perceptible artifacts.
+amateur_snapshot_aesthetic,https://overchat.ai/ai-hub/how-to-make-realistic-ai-photos,"use keywords smartphone photo, iPhone photo, candid shot, spontaneous, snapshot aesthetic"
+analog_artifacts_overlay,https://www.vsco.co/effects/scratched-texture,place a grain/dust/scratch or light-leak overlay layer over the image and set it to Screen blend mode
+anatomy_correction,https://imagera.ai/learn/best-lora-models-realistic-ai-images-2026,Anatomy LoRAs correct hands and proportions at 0.5-0.7.
+aperture_simulation,https://www.aiphotogenerator.net/blog/2026/06/depth-of-field-effects,A wider aperture usually gives you a shallower depth of field.
+aspect_ratio_correction,https://www.qwe.edu.pl/tutorial/best-midjourney-prompts-realistic-photos,non-square aspect ratios break body anatomy more often than square ones.
+authentic_compression,https://imagera.ai/blog/bypass-ai-detection-2026,Apply authentic compression that matches in-camera JPEG processing rather than clean lossless output.
+avoid_beauty_filter,https://www.reddit.com/r/midjourney/comments/1oa7jsj/the_prompt_i_use_to_generate_extremely_realistic,telling the model not to 'beauty filter' the subject
+avoid_exaggerated_tokens,https://x.com/michaelrabone/status/1982372242110521445,Don't use exaggerated prompt tokens like 'Ultra-HD' and '4K' as they usually make the portraits look more plastic and artificial
+avoid_over_enhancement,https://lensgo.ai/blog/how-to-get-photorealistic-ai-images,"Avoid over-enhancement language like ultra-detailed, 8K, hyperrealistic..."
+awkward_composition,https://www.reddit.com/r/singularity/comments/1jwe2z8/you_can_get_chatgpt_to_make_extremely_realistic,"off-center framing, messy angle like pulled phone from pocket"
+background_realism,https://www.digitalartsonline.co.uk/features/how-make-ai-generated-images-look-realistic/,AI-generated backgrounds are uniformly detailed and free of natural imperfections.
+baked_in_imperfections,https://overchat.ai/ai-hub/how-to-make-realistic-ai-photos,the final 10% of realism comes from imperfections like film grain and lens flares baked into the prompt
+blur_sharpen,https://promptingpixels.com/tutorial/how-to-make-ai-images-look-more-realistic-in-comfyui,AI-generated images often have a telltale glossy or overly smooth finish that immediately gives them away.
+camera_and_film_keywords,https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompts-for-realistic-photos.htm,"Camera and film keywords: RAW photo, DSLR photo, analog style, Fujifilm, Sony, film stock Kodachrome or Portra 800."
+camera_and_lens_details,https://x.com/michaelrabone/status/1982372242110521445,Add a camera and lens to your prompt for additional realism.
+camera_details,https://cloudinary.com/guides/image-generation/how-to-make-ai-images-look-real,"Useful camera cues include: Shot on a 35mm lens, Shot on a 50mm lens, Shallow depth of field."
+camera_keywords,https://stable-diffusion-art.com/realistic-people,"Keywords like dslr, ultra quality, 8K, UHD can improve the quality of images."
+camera_lens_specification,https://lensgo.ai/blog/how-to-get-photorealistic-ai-images,"Specify camera and lens in the prompt: shot on Canon R5, 85mm f/1.4..."
+camera_pipeline_simulation,https://github.com/PurinNyova/Image-Detection-Bypass-Utility,"Camera pipeline simulator: Bayer/demosaic, JPEG cycles/quality, vignette, chromatic aberration."
+camera_specific_terms,https://zsky.ai/blog/how-to-make-ai-art-look-real,"Replace artistic descriptions with camera-specific terminology: Nikon D850, 85mm lens, f/1.8 aperture."
+camera_specification,https://x.com/alex_prompter/status/2018963703606235158,Specify iPhone camera specs for authenticity
+camera_gear_realism,https://www.qwe.edu.pl/tutorial/best-midjourney-prompts-realistic-photos,"When you include these technical details in your prompt, you’re speaking the language Midjourney’s training data actually understands."
+chromatic_aberration,https://miraflow.ai/blog/how-to-make-ai-images-look-like-real-photos-prompt-tricks,"The most effective approach is combining camera and lens specifications, specific lighting descriptions, film grain or ISO noise, and subtle optical flaws like chromatic aberration and vignetting."
+clarity_enhancer_polish,https://upsampler.com/blog/make-ai-images-look-real,"The final step is the Free Clarity AI Upscaler, which sharpens the overall image and adds a final layer of definition."
+color_adjust,https://sunra.ai/blog/make-ai-video-look-less-ai,"Pull down saturation by 10-15%, add a slight color cast (warm shadows, cool highlights), and increase contrast slightly."
+color_transfer,https://fstoppers.com/composite/how-properly-blend-and-match-lighting-and-colors-composite-image-199989,harmonize its global color statistics toward a real photo (mean/variance color transfer in Lab space)
+multi_generation_blend,https://artsmart.ai/blog/how-to-make-realistic-ai-images/,"Combine outputs: mix elements from different generated images (backgrounds, lighting, subjects)."
+compression_manipulation,https://sider.ai/blog/ai-tools/can-compression-give-away-a-fake-reading-ai-image-artifacts,Deliberately resizing the image slightly and recompressing at a known/lower JPEG quality shifts the frequency artifacts and degrades the AI fingerprint in the DCT domain.
+contextual_visual_directions,https://x.com/gregisenberg/status/2047016126480040221,"I prompted 8 directions for the same Shopify ad story. Wes Anderson, Nike, cinematic, Apple shot on iPhone."
+watermark_erasure_rerender,https://github.com/wiltodelta/remove-ai-watermarks,use the watermarked image as a ControlNet reference to re-render the content and discard the watermark
+creative_upscale_detail,https://upsampler.com/blog/make-ai-images-look-real,"The Free AI Image Upscaler... regenerates them at a higher resolution, adding the kind of fine detail that separates real photos from AI art."
+depth_of_field_control,https://www.aiphotogenerator.net/blog/2026/06/depth-of-field-effects,A shallow depth of field makes one part of the image stand out.
+lighting_lens_detailing,https://embracepresets.com/best-midjourney-prompts-for-realistic-photos,Incorporating elements like lighting conditions and lens descriptions can significantly enhance the realism of your generated images.
+skin_pore_detailing,https://www.reddit.com/r/midjourney/comments/1oa7jsj/the_prompt_i_use_to_generate_extremely_realistic,"prompt for skin pores detailed skin texture and sometimes even acne, pimples freckles"
+device_specificity,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,"By choosing this device, the latent space of the model is drawing from training images that are likely from platforms such as Instagram and Facebook."
+watermark_pattern_disruption,https://github.com/wiltodelta/remove-ai-watermarks,"diffusion-based regeneration that encodes the image to latent space, injects noise to break the watermark pattern"
+directional_lighting,https://lensgo.ai/blog/how-to-get-photorealistic-ai-images,"Use directional lighting: single window light from camera left, soft shadows..."
+downscale_upscale,https://github.com/swaylq/deai-image,"Strip metadata, add film grain, recompress, and bypass AI image detectors."
+dramatic_lighting,https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompts-for-realistic-photos.htm,"Lighting: dramatic lighting, soft sunlight, golden hour, bokeh, diffused lighting."
+environmental_context,https://x.com/alex_prompter/status/2018963703606235158,Include environmental context and natural lighting
+exaggerated_features_integration,https://www.reddit.com/r/singularity/comments/1jwe2z8/you_can_get_chatgpt_to_make_extremely_realistic,the ball’s exaggerated facial features are seamlessly and naturally integrated
+exposure_adjustment,https://craigboehman.com/blog/from-ai-to-analog-using-dehancer-to-elevate-your-midjourney-images-with-authentic-film-looks,"Adjust Exposure, Temperature Compensation and Tint to counteract Midjourney oversaturation..."
+iris_pore_detailing,https://imagera.ai/learn/best-lora-models-realistic-ai-images-2026,"Face detail LoRAs add skin pores, iris texture, catchlights and hair strands at strength 0.5-0.8."
+face_symmetry_repair,https://stable-diffusion-art.com/common-problems-in-ai-images-and-how-to-fix-them,Turn on face restoration to fix faces and eyes if your GUI supports it.
+face_skin_refinement,https://artsmart.ai/blog/how-to-make-realistic-ai-images/,"Face and skin refinement: enhance eyes, smooth skin, correct facial structure."
+faded_tone_curve,https://www.vsco.co/features/fade,"A faded tone curve (raise the black point, compress shadows) mimics analog print fade..."
+fft_phase_perturbation,https://github.com/PurinNyova/Image-Detection-Bypass-Utility,amount of stochastic variation introduced in the Fourier transform domain to simulate non-uniform distortions.
+filename_appending,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,with the HEIC extension we kept a lot of dynamic range... while the JPG extension increased noise and reduced dynamic range.
+film_emulation_lut,https://www.presetpro.com/free-portra-800-lut-analog-film-grade/,Apply a film-stock LUT to remap the AI image's generic palette onto a real analog film response.
+film_grain,https://craigboehman.com/blog/from-ai-to-analog-using-dehancer-to-elevate-your-midjourney-images-with-authentic-film,"By texture, I'm not talking about the image's content but the file itself: there's a complete absence of 'noise' or 'grain,' which creates a strange effect when you zoom in."
+film_stock_emulation,https://craigboehman.com/blog/from-ai-to-analog-using-dehancer-to-elevate-your-midjourney-images-with-authentic-film-looks,"Apply authentic film stock emulations (Kodak Portra 160NC, Fujicolor Natura 1600)..."
+portrait_realism_tuning,https://www.kdnuggets.com/3-ways-to-generate-hyper-realistic-faces-using-stable-diffusion,Deploy a fine-tuned checkpoint from CivitAI optimized for portraiture.
+focal_length_adjustment,https://www.aiphotogenerator.net/blog/2026/06/depth-of-field-effects,A longer focal length often makes background blur feel stronger.
+gaussian_noise_simulation,https://github.com/PurinNyova/Image-Detection-Bypass-Utility,"Standard deviation of Gaussian noise applied to the image. Higher values introduce more noise, useful for simulating sensor artifacts."
+glcm_texture_matching,https://github.com/PurinNyova/Image-Detection-Bypass-Utility,GLCM normalization aims to match these texture statistics between the input and an FFT reference image.
+golden_hour_lighting,https://x.com/gregisenberg/status/2047016126480040221,"golden hour lighting, Mediterranean aesthetic, slight imperfections in the subjects."
+harmonize_lighting_color,https://proedu.com/blogs/photography-fundamentals/creative-compositing-blending-realities-in-photoshop,"light direction, temperature and intensity must be consistent across all layers"
+high_iso_grain,https://overchat.ai/ai-hub/how-to-make-realistic-ai-photos,high ISO 3200 for grainier phone noise in dim conditions
+quality_descriptor_boost,https://rockyshikoku.medium.com/prompt-tips-for-generating-realistic-human-images-with-stablediffusion-51c9f7820d22,"put a lot of words like this, separated by commas."
+high_resolution_generation,https://imagera.ai/blog/bypass-ai-detection-2026,Generate at 2048x2048px or higher because higher-resolution images contain more natural detail and noise patterns matching real camera output.
+imperfection_inclusion,https://cloudinary.com/guides/image-generation/how-to-make-ai-images-look-real,"A realistic AI image usually has five things: believable subject, natural lighting, physical consistency, realistic texture, and a clear photographic style."
+facial_feature_adjustment,https://stable-diffusion-art.com/realistic-people,Inpainting is a technique to keep both the composition and have total control of the face.
+finger_correction,https://stable-diffusion-art.com/common-problems-in-ai-images-and-how-to-fix-them,Use inpainting to generate multiple images and choose the one you like.
+distorted_region_repair,https://artsmart.ai/blog/how-to-make-realistic-ai-images/,"Inpainting repairs distorted or missing areas like hands, eyes, or objects."
+intentional_composition,https://x.com/invideoOfficial/status/2035014664602755197,The decision to place the subject off-center in a way that creates tension.
+interpolation_for_smoothness,https://www.reddit.com/r/StableDiffusion/comments/1q71w48/fastest_oom_free_interpolation_upscale_film_grain,Interpolation = smoothing the video motion
+introduce_tonal_variation,https://imageworkindia.com/fix-plastic-skin-ai-headshots-photoshop/,"introducing subtle tonal variation and asymmetry, and avoiding the uniform airbrushed surface."
+progressive_refinement_pass,https://artsmart.ai/blog/how-to-make-realistic-ai-images/,Iterative refinement through progressive prompting.
+iterative_texture,https://www.reddit.com/r/StableDiffusion/comments/1blph1s/how_the_make_the_generated_photo_look_less/,For illustration I use iterative upscale in comfyui with siax model and get texture like it was painted with pencil
+jpeg_compression,https://writehuman.ai/blog/ai-image-detector-tools-how-they-work,"The four most common ways AI image detectors break down in real use: JPEG compression artifacts, cropping, inpainting hybrid, and adversarial."
+keyword_priming_for_hands,https://stable-diffusion-art.com/common-problems-in-ai-images-and-how-to-fix-them,"Include keywords that describe hands and fingers, like 'beautiful hands' and 'detailed fingers'."
+lens_distortion,https://www.reddit.com/r/StableDiffusion/comments/18ueofn/,introducing camera lens distortion
+light_source_description,https://zsky.ai/blog/how-to-make-ai-art-look-real,"Describe light source with direction, quality, color temperature: soft window light from the left."
+lighting_and_composition,https://www.reddit.com/r/midjourney/comments/1oa7jsj/the_prompt_i_use_to_generate_extremely_realistic,"The lighting is low key with high contrast, casting shadows that sculpt her facial features"
+lighting_color_harmonization,https://www.photoshopessentials.com/photo-editing/how-to-blend-anything-with-harmonize-in-photoshop-2026/,transfer the target real-photo's lighting and color tone onto the AI region
+lighting_harmonization,https://fstoppers.com/composite/how-properly-blend-and-match-lighting-and-colors-composite-image-199989,"the light direction, temperature and intensity must be consistent across layers."
+lighting_keywords,https://stable-diffusion-art.com/realistic-people,A good photo has interesting lights. The same applies to Stable Diffusion.
+studio_lighting_simulation,https://imagera.ai/learn/best-lora-models-realistic-ai-images-2026,Lighting LoRAs replicate studio/golden-hour/window light at 0.4-0.7.
+style_stacking,https://imagera.ai/learn/best-lora-models-realistic-ai-images-2026,Stack a maximum of 3 LoRAs with total combined strength under 2.0.
+low_denoise_refinement,https://stable-diffusion-art.com/denoising-strength/,A low-denoise img2img pass over an AI image relaunders its pixel statistics through the model while preserving content.
+low_stylize_value,https://x.com/michaelrabone/status/1982372242110521445,I use a low --stylize between 75 and 200. My preference is --stylize 75.
+macro_and_close_up_shots,https://openart.ai/blog/post/stable-diffusion-prompts-for-skin,Use macro shot and close-up to force detail.
+moire_effect_utilization,https://blog.ampedsoftware.com/2019/04/16/recaptured-images-are-a-good-way-to-fool-forensic-analysts-but-not-those-equipped-with-amped-authenticate,the moiré effect is so evident in recaptured images that you don’t even need a tool to spot it.
+motion_blur_effect,https://overchat.ai/ai-hub/how-to-make-realistic-ai-photos,slight motion blur and even lighting read as casual unintentional snapshots
+multi_stage_composition,https://x.com/invideoOfficial/status/2035014664602755197,The best AI image is not generated. It is assembled.
+multi_pass_upscale_denoise,https://github.com/roblaughter/comfyui-workflows/blob/main/docs/upscale.md,The strongest realism-upscale workflow combines an upscale-model pass... with a subsequent img2img denoising pass...
+natural_color_correction,https://www.reddit.com/r/StableDiffusion/comments/1rul211/,"Instead of smoothing out features, the model strives to preserve micro-details like natural skin texture, individual hair strands, and fabric imperfections."
+natural_color_cues,https://overchat.ai/ai-hub/how-to-make-realistic-ai-photos,"realistic colors, warm-cool color contrast, muted colors push toward natural phone rendering"
+natural_imperfections,https://imagera.ai/blog/bypass-ai-detection-2026,"Add natural imperfections: real photography has slight focus errors, lens aberrations and subtle lighting variations."
+natural_lighting,https://imagera.ai/blog/bypass-ai-detection-2026,Prefer more natural lighting and less perfect composition.
+natural_lighting_simulation,https://www.reddit.com/r/OpenAI/comments/1kei0eb/guys_if_you_need_to_create_realistic_image_use,using a prime lens with a wide aperture... in natural lighting conditions.
+artifact_suppression,https://www.kdnuggets.com/3-ways-to-generate-hyper-realistic-faces-using-stable-diffusion,"Prompt engineering with strong negative prompts (disfigured, ugly, bad) prevents common artifacts."
+skin_realism_correction,https://www.reddit.com/r/StableDiffusion/comments/1bonciw/prompt_for_realistic_skin,If I get weird skin issues I often try 'Zombie' 'Sick' in negative prompt which often helps a lot better than stuff like 'healthy skin'
+stylization_exclusion,https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompts-for-realistic-photos.htm,"Negative prompts to exclude: doll, anime, cartoon, render, artwork, semi-realistic, CGI."
+noise_distortion_addition,https://aicleanify.com/blog/bypass-ai-detection-techniques,add noise and distortion in image editing software to disrupt the patterns AI detectors identify.
+optical_imperfections,https://kolarivision.com/post-infrared-photo-editing/correcting-lens-distortion-and-chromatic-aberrations-in-photoshop/,to ADD realism you apply them instead.
+overlay_real_skin_texture,https://www.cloudretouch.com/fix-generative-fill-skin-artifacts/,"Restore natural pores by overlaying real high-frequency skin texture, adding fine noise/grain..."
+perlin_grain_application,https://github.com/EllangoK/ComfyUI-post-processing-nodes,The FilmGrain post-processing node adds realistic grain using Perlin noise.
+phone_camera_look,https://www.hedra.com/blog/make-ai-images-look-like-real-photos-prompting,"candid amateur flash snapshot, harsh direct on-camera flash, bright hotspot on the faces, background falling into near-black, slight motion blur, framing a little tilted, ordinary everyday"
+photo_texture_blend,https://www.digitalartsonline.co.uk/features/how-make-ai-generated-images-look-realistic/,"This technique involves overlaying or merging AI-generated images with real photographs... Applying various filters to enhance texture, color grading, and overall appearance."
+photographic_imperfections,https://zsky.ai/blog/how-to-make-ai-art-look-real,"Request photographic imperfections: slight lens vignetting, subtle chromatic aberration."
+photographic_terminology_framing,https://artsmart.ai/blog/how-to-make-realistic-ai-images/,"Photography language in prompts: natural light, cinematic lighting, backlit, soft shadows."
+dslr_style_simulation,https://imagera.ai/learn/best-lora-models-realistic-ai-images-2026,"Photography-style LoRAs simulate DSLR bokeh, film grain and lens characteristics at 0.3-0.5."
+photorealism_quality_boost,https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompts-for-realistic-photos.htm,"Use photorealism-focused checkpoints like CyberRealistic Pony, EpicRealism, or Juggernaut XL, trained on high-quality images for life-like results."
+photoshop_damage_removal,https://www.reddit.com/r/StableDiffusion/comments/1bonciw/prompt_for_realistic_skin,"a great way to get realistic skin is to prompt for bad skin, sun damaged, acne, etc, then photoshop that damage out bit by bit until it looks natural."
+poisson_blending,https://fstoppers.com/composite/how-properly-blend-and-match-lighting-and-colors-composite-image-199989,Poisson image editing (seamless cloning) matches gradients by solving a Poisson equation from the boundaries of a pasted region.
+portrait_size_adjustment,https://stable-diffusion-art.com/common-problems-in-ai-images-and-how-to-fix-them,You do want to use portrait size if you want to generate a full body image.
+post_process_with_upscalers,https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompts-for-realistic-photos.htm,Post-process with AI upscalers to keep realistic skin texture and brighten blurry eyes.
+print_film_emulation,https://juanmelara.com.au/blog/print-film-emulation-luts-for-download,Emulating the print stage adds the gentle highlight compression and tone response of an analog print pipeline.
+print_rescan,https://www.reddit.com/r/StableDiffusion/comments/13eqp8v/how_to_prevent_ai_image_detection/,Print the thing out and scan it back in. Works with Hive.
+blemish_wrinkle_injection,https://upsampler.com/blog/make-ai-images-look-real,"Telling the model to include imperfections sounds counterintuitive, but it is one of the most effective ways to avoid the 'too perfect' AI look."
+structured_scene_detailing,https://www.qwe.edu.pl/tutorial/best-midjourney-prompts-realistic-photos,"here’s the anatomy of one working prompt, broken down:"
+iterative_denoise_pass,https://www.reddit.com/r/StableDiffusion/comments/1sfzzhq/how_do_i_make_images_look_less_aiity/,"Upscaling, film grain, second pass with low denoise on ZimageTurbo"
+realistic_hands,https://x.com/alex_prompter/status/2018963703606235158,"realistic hands (5 fingers, natural pose)"
+photographic_brief_realism,https://cloudinary.com/guides/image-generation/how-to-make-ai-images-look-real,A strong realism prompt should feel more like a photography brief than a list of random adjectives.
+recapture_images,https://blog.ampedsoftware.com/2019/04/16/recaptured-images-are-a-good-way-to-fool-forensic-analysts-but-not-those-equipped-with-amped-authenticate,"A recaptured image is a 'picture of a picture': you display your (possibly forged) image on a screen, or you print it on paper, and then you take a picture of it."
+reference_image_style,https://embracepresets.com/best-midjourney-prompts-for-realistic-photos,You can provide a photo that I’ve edited and ask Midjourney to generate a new image 'in the style of' the reference photo.
+high_res_facial_refinement,https://www.kdnuggets.com/3-ways-to-generate-hyper-realistic-faces-using-stable-diffusion,Use SDXL which generates a latent then applies a refiner pass at 1024x1024 for improved facial features.
+resample_chain,https://matplotlib.org/stable/gallery/images_contours_and_fields/image_antialiasing.html,the signal-processing recipe upsample -> process -> low-pass filter -> downsample resamples the pixel grid.
+restore_skin_texture,https://imageworkindia.com/fix-plastic-skin-ai-headshots-photoshop/,Restore realism by adding back high-frequency pore and fine-line texture.
+skin_quality_tuning,https://www.reddit.com/r/StableDiffusion/comments/1bonciw/prompt_for_realistic_skin,I found changing the sampling method to 'DPM++ 3M SDE Karras' and the Sampling Steps to around 60-80 helps with skin.
+scenario_inclusion,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,"Authentic UGC style photos happen for a reason. They’d be taken at a team lunch, or a work party."
+pattern_obscuring_relaunder,https://aicleanify.com/blog/bypass-ai-detection-techniques,pass images through secondary models that add noise and distortion.
+sensor_noise_prnu,https://www.reddit.com/r/StableDiffusion/comments/18ueofn/,applying camera RAW methods
+shadow_consistency,https://zsky.ai/blog/how-to-make-ai-art-look-real,Inconsistent shadows are a major AI tell.
+shadow_highlight,https://www.techradar.com/news/how-to-make-ai-generated-images-look-more-realistic,color correction targeting specific tone zones
+shallow_depth_of_field,https://lensgo.ai/blog/how-to-get-photorealistic-ai-images,shallow depth of field is one of the strongest visual signals that this is a real photograph.
+simulate_halation,https://blog.dehancer.com/articles/halation/,Clean AI renders lack this optical glow entirely.
+simulate_lighting_mismatches,https://charlesbushphoto.com/charles-bush-photography-news/2025/11/ai-generated-vs-real-photos,"Lighting mismatches: The filled areas may not match the direction, color, or quality of the scene’s original light."
+subsurface_scattering_skin,https://imagera.ai/learn/best-lora-models-realistic-ai-images-2026,Skin texture LoRAs add subsurface scattering and natural imperfections at 0.4-0.6.
+skin_texture_overlay,https://proedu.com/blogs/photoshop-skills/advanced-frequency-separation-techniques-for-flawless-retouching-elevating-your-photo-editing-skills,"take a real skin-texture patch, desaturate it, set blend mode to Overlay or Soft Light"
+social_platform_context,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,People post different types of photos on different social platforms!
+soft_shadows_natural_light,https://openart.ai/blog/post/stable-diffusion-prompts-for-skin,Soft shadows and natural light create dimensional modeling rather than flat perfection.
+specific_lighting_descriptions,https://www.qwe.edu.pl/tutorial/best-midjourney-prompts-realistic-photos,Real photo captions include directional lighting cues.
+camera_lighting_specificity,https://x.com/gregisenberg/status/2047016126480040221,you have to be extremely specific. if you give it a lazy prompt you get stock photos.
+specificity_defeats_defaults,https://openart.ai/blog/post/stable-diffusion-prompts-for-skin,Specificity defeats defaults: explicit imperfections prevent algorithmic averaging toward idealization.
+style_raw_usage,https://www.qwe.edu.pl/tutorial/best-midjourney-prompts-realistic-photos,--style raw tells the model to follow the laws of physics more strictly.
+subject_distance_optimization,https://www.aiphotogenerator.net/blog/2026/06/depth-of-field-effects,"The closer you are to your subject, the shallower the depth of field tends to feel."
+subtle_per_pixel_perturbations,https://github.com/wiltodelta/remove-ai-watermarks,apply extremely subtle structured per-pixel perturbations that interfere with the watermark's detection features
+surface_naturalize,https://www.reddit.com/r/StableDiffusion/comments/1rul211/,It helps eliminate the common 'waxy' or 'oily' sheen often seen in AI-generated portraits.
+synthetic_prnu_injection,https://stateofsurveillance.org/articles/technical/camera-sensor-fingerprinting-prnu-forensics/,Injecting a synthetic multiplicative sensor-noise pattern... imitates the PRNU statistics that real-camera photos carry.
+timeframe_specification,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,you can see the increase in camera quality here as we go from 2016 to 2020.
+iphone_snapshot_flaws,https://www.reddit.com/r/singularity/comments/1jwe2z8/you_can_get_chatgpt_to_make_extremely_realistic,prompt it for unremarkable amateur iPhone photos
+unstyled_image_generation,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,"we’re getting much more natural photos, and the people in them are also looking a bit more varied, and a LOT less cringe."
+upscale_grain_denoise,https://www.reddit.com/r/StableDiffusion/comments/1sfzzhq/how_do_i_make_images_look_less_aiity/,"Upscaling, film grain, second pass with low denoise on ZimageTurbo"
+upscaling_clarity,https://artsmart.ai/blog/how-to-make-realistic-ai-images/,"Upscaling increases resolution and boosts clarity without blurring, improving texture detail."
+upscaling_for_quality,https://www.reddit.com/r/StableDiffusion/comments/1q71w48/fastest_oom_free_interpolation_upscale_film_grain,Upscaling = Improving the resolution and the Image quality
+vary_texture_details,https://charlesbushphoto.com/charles-bush-photography-news/2025/11/ai-generated-vs-real-photos,the AI version smooths fine feather textures and micro-contrast. The transition between tones in the feathers is unnaturally even.
+vignette,https://miraflow.ai/blog/how-to-make-ai-images-look-like-real-photos-prompt-tricks,"The most effective approach is combining camera and lens specifications, specific lighting descriptions, film grain or ISO noise, and subtle optical flaws like chromatic aberration and vignetting."
+vignette_application,https://craigboehman.com/blog/from-ai-to-analog-using-dehancer-to-elevate-your-midjourney-images-with-authentic-film-looks,Apply vignette with brightness adjustment for a filmy result...
+skin_detail_emphasis,https://www.kdnuggets.com/3-ways-to-generate-hyper-realistic-faces-using-stable-diffusion,producing skin marks and porous skin.
+weirdness_parameter,https://medium.com/@jnyms/ai-is-terrible-at-generating-mobile-camera-photos-i-spent-40-hours-learning-how-to-do-it-right-81aebfd133ce,increasing the weirdness gives us more varied situations and framings for the image.
+white_balance_correction,https://www.lightxeditor.com/photo-editing/adjust-image-white-balance-tint-temperature/,"neutralize by correcting both axes, removing yellow indoor or blue shadow casts"

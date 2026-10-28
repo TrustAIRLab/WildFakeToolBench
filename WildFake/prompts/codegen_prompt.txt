@@ -1,0 +1,71 @@
+You are a Python engineer implementing an image-manipulation tool for an
+adversarial-attack research framework. You are given a single ADVERSARIAL IDEA
+mined from a community blog/forum (concept + mechanism), and you must turn it
+into a concrete, runnable tool.
+
+The tool defeats a fake-image detector by post-processing an AI-generated image
+so it reads as a real photograph. Implement the IDEA faithfully — choose sensible
+concrete operations and parameter ranges yourself; the idea gives you the concept,
+you supply the realization.
+
+You MUST output a single, self-contained Python module that defines ONE class
+subclassing `BaseTool`. Follow this exact contract:
+
+```python
+from typing import Dict, Any
+from PIL import Image
+import numpy as np
+# you may also import: scipy.ndimage, scipy.signal, math, random  (all available)
+# DO NOT import cv2 (not installed) — recommend uses numpy + PIL + scipy.
+from .base_tool import BaseTool
+
+
+class <CamelCaseName>Tool(BaseTool):
+    def __init__(self):
+        super().__init__(
+            name="<snake_case_name>",                 # MUST match the given name
+            description="<what the transform does, effect-only, 1-3 sentences>",
+        )
+
+    def apply(self, image: Image.Image, params: Dict[str, Any]) -> Image.Image:
+        self.validate_params(params)
+        # read params with .get(name, default); convert image to RGB if needed;
+        # operate via numpy/PIL/scipy/cv2; return a NEW PIL.Image (mode "RGB").
+        ...
+
+    def get_param_schema(self) -> Dict[str, Any]:
+        # 1-4 params, each: {"type": "int|float|str", "min":.., "max":..,
+        #                    "description":.., "default":.., "required": False}
+        ...
+
+    def get_guidance(self) -> str:
+        return "<one line: parameter ranges + when this tool is most useful>"
+```
+
+HARD REQUIREMENTS:
+- Pure CPU, deterministic-enough, fast (<1s on a 1024px image). NO model loading,
+  NO network, NO file I/O, NO GPU. If the idea is inherently generative (needs a
+  diffusion model), DO NOT fake it — instead implement the closest *numeric*
+  approximation of its visual effect and say so in the description.
+- `apply` must always return a valid RGB PIL.Image the same size as the input
+  (unless the idea is explicitly about resizing/cropping, then keep it reasonable).
+- Every param must have a "default" and "required": False so the tool runs with
+  `apply(img, {})`. This is tested literally: the harness calls `apply(img, {})`
+  with NO params at all, so every parameter's default must be self-sufficient.
+- If the idea conceptually needs a REFERENCE/TARGET (a second image, a texture
+  patch, a LUT, "match this to a real photo's stats", etc.), you do NOT have
+  access to one at runtime — there is no file to open and no second image will
+  ever be passed in. DERIVE the reference internally instead: e.g. hardcode a
+  plausible target statistical profile (typical real-photo color/tone/texture
+  stats) in code, or make the reference self-referential (compute it FROM the
+  input image itself — a blurred/downsampled/desaturated version of it, etc.).
+  Never write `Image.open(...)` on a param value, and never make a tool raise
+  because a reference/texture/LUT param was absent.
+- Do NOT use PIL APIs removed in Pillow >= 10: `ImageDraw.textsize()` (use
+  `font.getbbox()`/`ImageDraw.textbbox()`/`ImageDraw.textlength()` instead),
+  `Image.ANTIALIAS` (use `Image.Resampling.LANCZOS`).
+- Description must describe the EFFECT, not "use when detector says ...".
+- Self-contained: only the imports listed above. No placeholder/TODO code.
+
+Output format — return ONLY the Python code, no prose, no markdown fences.
+</content>

@@ -1,0 +1,19 @@
+# WildFake — runtime dependencies.
+#
+# This covers the collection pipeline and the tool suite in WildFakeTools.
+# Tested with Python 3.10-3.12.
+
+# --- Tool suite (WildFakeTools) ---------------------------------------------
+numpy>=1.23
+Pillow>=10.0
+scipy>=1.10
+
+# --- Collection pipeline (WildFake) -----------------------------------------
+openai>=1.30          # GPT-4o-mini calls: mining, ranking, synthesis
+pydantic>=2.5         # schema validation for mined method records
+requests>=2.31        # Tavily search API and Reddit API
+python-dotenv>=1.0    # loads .env
+
+# --- Optional -----------------------------------------------------------------
+# A small number of tools need extra packages; each one reports what it needs and
+# how to install it when you call it.

@@ -1,0 +1,77 @@
+You are mining a community post (Reddit thread or blog/forum article) for IDEAS
+that could make AI-generated images pass as real photographs and thereby evade
+VLM-based fake-image detectors (FakeVLM, FakeShield, SIDA).
+
+WHAT WE WANT — the IDEA, not a finished recipe.
+We are NOT asking for exact PIL/OpenCV parameters. We want the *concept* and the
+*mechanism*: the intuition a practitioner described for why an AI image looks fake
+and what they do about it. A downstream coding agent will turn each idea into a
+concrete tool later. Example of a good extraction:
+  idea: "photograph or re-scan the AI image at a slight tilt, like a phone snapshot
+         of a printout"
+  mechanism: "introduces perspective skew, re-photography sensor noise and JPEG
+              history that real shared photos have but clean AI renders lack"
+That is fully acceptable EVEN THOUGH no exact rotation angle is given.
+
+A method may be a single step or many steps — STEP COUNT DOES NOT MATTER.
+Do NOT discard an idea just because it is "only one operation". Judge ideas by
+NOVELTY and FEASIBILITY (defined below), not by complexity.
+
+CLASSIFY each extracted idea into one method_type:
+  - "generative" : uses a generative model to do the work — T2I/img2img prompt
+                   tricks, negative prompts, low-denoise regeneration, LoRA/
+                   checkpoint swaps, diffusion inpainting of artifacts.
+  - "numeric"    : a deterministic signal/pixel operation or pipeline — grain,
+                   compression, sensor-noise, color/tone, geometric, capture-pipeline
+                   mimicry. No neural model needed at apply time.
+  - "hybrid"     : explicitly combines the two (e.g. numeric pipeline THEN a
+                   generative regeneration pass, or generate-then-launder).
+
+SKIP only genuinely empty content: venting, news/ethics commentary, pure
+"is this fake?" guessing with no technique, or vague aesthetic praise with no
+actionable mechanism. Set verdict="discard" and candidate_methods=[] for those.
+
+Score the POST on three axes (1=worst, 10=best):
+  - novelty     : how unusual / under-the-radar are these ideas? Favor techniques a
+                  detector is UNLIKELY to have been trained against (recent tricks,
+                  niche capture pipelines, creative model-side moves). Common,
+                  obvious moves score low; clever or fresh ideas score high.
+  - feasibility : could an LLM coding agent realistically implement these as an
+                  image tool? (a PIL/OpenCV op, or a call to a local generative
+                  model). Concrete, mechanism-clear ideas score high; hand-wavy or
+                  research-grade ("train a new GAN") ideas score low.
+  - relevance   : does the content actually concern making AI images look real /
+                  evading detection (vs. unrelated photo editing)?
+
+For each candidate idea capture:
+  - name (snake_case, ~2-4 words)
+  - idea (one sentence: the concept)
+  - mechanism (one sentence: WHY it makes the image look real / why a detector
+    might miss it)
+  - method_type ("generative" | "numeric" | "hybrid")
+  - quoted_evidence (exact phrase you took it from, <= 200 chars)
+  - source ("post" | "comment_<author>")
+
+Output ONLY valid JSON, schema:
+{
+  "post_id": "<echo>",
+  "verdict": "valuable" | "borderline" | "discard",
+  "scores": {
+    "novelty": <int 1-10>,
+    "feasibility": <int 1-10>,
+    "relevance": <int 1-10>
+  },
+  "overall_value": <int 1-10>,
+  "rationale": "<2-3 sentences>",
+  "candidate_methods": [
+    {
+      "name": "...",
+      "idea": "...",
+      "mechanism": "...",
+      "method_type": "generative" | "numeric" | "hybrid",
+      "quoted_evidence": "...",
+      "source": "..."
+    }
+  ]
+}
+</content>

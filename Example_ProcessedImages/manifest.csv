@@ -1,0 +1,106 @@
+image,processing,tools_in_order,strength,aligned_ssim,status
+Gemini_Generated_Image_3e38mr3e38mr3e38.png,optical_imperfections (strength: moderate),optical_imperfections,moderate,0.8455,attacked
+Gemini_Generated_Image_55wee455wee455we.png,awkward_composition + phone_camera_look (strength: very_strong),awkward_composition + phone_camera_look,very_strong,0.8461,attacked
+Gemini_Generated_Image_5tl1uz5tl1uz5tl1.png,combine_outputs (strength: very_light),combine_outputs,very_light,0.8434,attacked
+Gemini_Generated_Image_7row357row357row.png,print_rescan + phone_camera_look (strength: strong),print_rescan + phone_camera_look,strong,0.8512,attacked
+Gemini_Generated_Image_8dy048dy048dy048.png,camera_processing_pipeline (strength: strong),camera_processing_pipeline,strong,0.8506,attacked
+Gemini_Generated_Image_9q3xso9q3xso9q3x.png,glcm_texture_matching (strength: moderate),glcm_texture_matching,moderate,0.8982,attacked
+Gemini_Generated_Image_b9gylhb9gylhb9gy.png,awkward_composition + phone_camera_look (strength: strong),awkward_composition + phone_camera_look,strong,0.8568,attacked
+Gemini_Generated_Image_d4atxmd4atxmd4at.png,interpolation_for_smoothness (strength: strong),interpolation_for_smoothness,strong,0.8414,attacked
+Gemini_Generated_Image_fjfenfjfenfjfenf.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+Gemini_Generated_Image_gjkzrfgjkzrfgjkz.png,print_rescan (strength: very_strong),print_rescan,very_strong,0.8495,attacked
+Gemini_Generated_Image_hoo2nihoo2nihoo2.png,upscale_grain_denoise_timeframe_specification_white_balance_correction_authentic_compression (strength: strong),upscale_grain_denoise_timeframe_specification_white_balance_correction_authentic_compression,strong,0.8018,attacked
+Gemini_Generated_Image_imkievimkievimki.png,awkward_composition (strength: light),awkward_composition,light,0.845,attacked
+Gemini_Generated_Image_jrzlgdjrzlgdjrzl.png,combine_artifact_mitigation (strength: moderate),combine_artifact_mitigation,moderate,0.8518,attacked
+Gemini_Generated_Image_k4no15k4no15k4no.png,photoshop_damage_removal (strength: very_light),photoshop_damage_removal,very_light,0.8098,attacked
+Gemini_Generated_Image_kk6205kk6205kk62.png,skin_texture_lora (strength: moderate),skin_texture_lora,moderate,0.8889,attacked
+Gemini_Generated_Image_o07cfmo07cfmo07c.png,print_rescan_awkward_composition_natural_color_cues (strength: strong),print_rescan_awkward_composition_natural_color_cues,strong,0.847,attacked
+Gemini_Generated_Image_t010e4t010e4t010.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+Gemini_Generated_Image_tah0wtah0wtah0wt.png,print_rescan (strength: strong),print_rescan,strong,0.8847,attacked
+Gemini_Generated_Image_u5t72xu5t72xu5t7.png,print_rescan_awkward_composition_phone_camera_look (strength: strong),print_rescan_awkward_composition_phone_camera_look,strong,0.7801,attacked
+Gemini_Generated_Image_ua2z0iua2z0iua2z.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+Gemini_Generated_Image_vaddwsvaddwsvadd.png,glcm_texture_matching (strength: strong),glcm_texture_matching,strong,0.8469,attacked
+gpt_1.png,white_balance_correction + phone_camera_look (strength: very_strong),white_balance_correction + phone_camera_look,very_strong,0.8458,attacked
+gpt_10.png,natural_imperfections (strength: strong),natural_imperfections,strong,0.8483,attacked
+gpt_11.png,print_rescan_awkward_composition_phone_camera_look (strength: light),print_rescan_awkward_composition_phone_camera_look,light,0.8281,attacked
+gpt_12.png,none — unmodified generated image (already classified REAL),,,,baseline_real
+gpt_13.png,upscale_grain_denoise_timeframe_specification_print_rescan_awkward_composition_white_balance_correction_natural_color_cues (strength: moderate),upscale_grain_denoise_timeframe_specification_print_rescan_awkward_composition_white_balance_correction_natural_color_cues,moderate,0.7853,attacked
+gpt_14.png,none — unmodified generated image (already classified REAL),,,,baseline_real
+gpt_15.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+gpt_16.png,phone_camera_look (strength: light),phone_camera_look,light,0.8478,attacked
+gpt_17.png,poisson_gaussian_noise (strength: very_light),poisson_gaussian_noise,very_light,0.8519,attacked
+gpt_18.png,awkward_composition (strength: moderate),awkward_composition,moderate,0.7987,attacked
+gpt_19.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+gpt_2.png,weirdness_parameter (strength: very_light),weirdness_parameter,very_light,0.8487,attacked
+gpt_20.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+gpt_21.png,print_rescan + awkward_composition (strength: very_strong),print_rescan + awkward_composition,very_strong,0.9165,attacked
+gpt_3.png,print_rescan (strength: very_strong),print_rescan,very_strong,0.8491,attacked
+gpt_4.png,photo_texture_blend (strength: very_strong),photo_texture_blend,very_strong,0.8659,attacked
+gpt_5.png,glcm_texture_matching (strength: strong),glcm_texture_matching,strong,0.8408,attacked
+gpt_6.png,timeframe_specification_awkward_composition_white_balance_correction_natural_color_cues_authentic_compression (strength: light),timeframe_specification_awkward_composition_white_balance_correction_natural_color_cues_authentic_compression,light,0.8225,attacked
+gpt_7.png,awkward_composition_natural_color_cues_phone_camera_look (strength: moderate),awkward_composition_natural_color_cues_phone_camera_look,moderate,0.8014,attacked
+gpt_8.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+gpt_9.png,exaggerated_features_integration (strength: strong),exaggerated_features_integration,strong,0.8993,attacked
+midjourney_animal_1.png,ai_normalizer (strength: strong),ai_normalizer,strong,0.8518,attacked
+midjourney_animal_2.png,print_rescan + awkward_composition (strength: light),print_rescan + awkward_composition,light,0.8564,attacked
+midjourney_animal_3.png,print_rescan + awkward_composition (strength: light),print_rescan + awkward_composition,light,0.8672,attacked
+midjourney_document_1.png,realistic_noise_model (strength: very_strong),realistic_noise_model,very_strong,0.7566,attacked
+midjourney_document_2.png,upscale_grain_denoise + white_balance_correction (strength: moderate),upscale_grain_denoise + white_balance_correction,moderate,0.7873,attacked
+midjourney_document_3.png,upscale_grain_denoise_print_rescan_awkward_composition_white_balance_correction_natural_color_cues_phone_camera_look (strength: very_light),upscale_grain_denoise_print_rescan_awkward_composition_white_balance_correction_natural_color_cues_phone_camera_look,very_light,0.7748,attacked
+midjourney_faceportrait_1.png,print_rescan (strength: strong),print_rescan,strong,0.867,attacked
+midjourney_faceportrait_2.png,awkward_composition + white_balance_correction (strength: strong),awkward_composition + white_balance_correction,strong,0.8443,attacked
+midjourney_faceportrait_3.png,perlin_grain_application (strength: very_light),perlin_grain_application,very_light,0.849,attacked
+midjourney_human_1.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+midjourney_human_2.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+midjourney_human_3.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+midjourney_object_1.png,print_rescan + awkward_composition (strength: strong),print_rescan + awkward_composition,strong,0.8992,attacked
+midjourney_object_2.png,combine_outputs (strength: very_light),combine_outputs,very_light,0.8396,attacked
+midjourney_object_3.png,print_rescan (strength: strong),print_rescan,strong,0.8725,attacked
+midjourney_satellite_1.png,print_rescan_white_balance_correction_natural_color_cues (strength: very_strong),print_rescan_white_balance_correction_natural_color_cues,very_strong,0.7962,attacked
+midjourney_satellite_2.png,awkward_composition (strength: very_strong),awkward_composition,very_strong,0.8406,attacked
+midjourney_satellite_3.png,glcm_texture_matching (strength: strong),glcm_texture_matching,strong,0.8521,attacked
+midjourney_scene_1.png,upscale_grain_denoise_print_rescan_awkward_composition (strength: light),upscale_grain_denoise_print_rescan_awkward_composition,light,0.7828,attacked
+midjourney_scene_2.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+midjourney_scene_3.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+qwenimage_animal_1_v3.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+qwenimage_animal_2_v3.png,timeframe_specification_print_rescan_awkward_composition (strength: strong),timeframe_specification_print_rescan_awkward_composition,strong,0.8368,attacked
+qwenimage_animal_3_v3.png,none — unmodified generated image (already classified REAL),,,,baseline_real
+qwenimage_document_1_v3.png,print_rescan (strength: strong),print_rescan,strong,0.8889,attacked
+qwenimage_document_2_v1.png,upscale_grain_denoise + print_rescan (strength: moderate),upscale_grain_denoise + print_rescan,moderate,0.802,attacked
+qwenimage_document_3_v2.png,print_rescan (strength: strong),print_rescan,strong,0.8588,attacked
+qwenimage_faceportrait_1_v3.png,camera_processing_pipeline (strength: very_strong),camera_processing_pipeline,very_strong,0.8046,attacked
+qwenimage_faceportrait_2_v3.png,photoshop_damage_removal (strength: light),photoshop_damage_removal,light,0.8492,attacked
+qwenimage_faceportrait_3_v1.png,none — unmodified generated image (already classified REAL),,,,baseline_real
+qwenimage_human_1_v3.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+qwenimage_human_2_v2.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+qwenimage_human_3_v1.png,timeframe_specification_print_rescan_awkward_composition (strength: very_strong),timeframe_specification_print_rescan_awkward_composition,very_strong,0.7954,attacked
+qwenimage_object_1_v1.png,upscale_grain_denoise + awkward_composition (strength: very_light),upscale_grain_denoise + awkward_composition,very_light,0.8511,attacked
+qwenimage_object_2_v1.png,aperture_simulation (strength: very_strong),aperture_simulation,very_strong,0.8069,attacked
+qwenimage_object_3_v3.png,photoshop_damage_removal (strength: very_light),photoshop_damage_removal,very_light,0.8384,attacked
+qwenimage_satellite_1_v3.png,upscale_grain_denoise + awkward_composition (strength: very_light),upscale_grain_denoise + awkward_composition,very_light,0.8489,attacked
+qwenimage_satellite_2_v3.png,glcm_texture_matching (strength: strong),glcm_texture_matching,strong,0.8392,attacked
+qwenimage_satellite_3_v3.png,realistic_noise_model (strength: light),realistic_noise_model,light,0.824,attacked
+qwenimage_scene_1_v3.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+qwenimage_scene_2_v1.png,print_rescan + awkward_composition (strength: very_light),print_rescan + awkward_composition,very_light,0.9058,attacked
+qwenimage_scene_3_v1.png,timeframe_specification_print_rescan_awkward_composition (strength: strong),timeframe_specification_print_rescan_awkward_composition,strong,0.7607,attacked
+sd21_animal_1_v2.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+sd21_animal_2_v3.png,photo_texture_blend (strength: very_strong),photo_texture_blend,very_strong,0.8384,attacked
+sd21_animal_3_v3.png,none — unmodified generated image (already classified REAL),,,,baseline_real
+sd21_document_1_v2.png,awkward_composition + white_balance_correction (strength: very_strong),awkward_composition + white_balance_correction,very_strong,0.8173,attacked
+sd21_document_2_v3.png,face_restoration (strength: strong),face_restoration,strong,0.8512,attacked
+sd21_document_3_v2.png,print_rescan + awkward_composition (strength: very_strong),print_rescan + awkward_composition,very_strong,0.8453,attacked
+sd21_faceportrait_1_v1.png,awkward_composition_white_balance_correction_authentic_compression (strength: moderate),awkward_composition_white_balance_correction_authentic_compression,moderate,0.8308,attacked
+sd21_faceportrait_2_v1.png,focal_length_adjustment (strength: strong),focal_length_adjustment,strong,0.8506,attacked
+sd21_faceportrait_3_v2.png,upscale_grain_denoise (strength: light),upscale_grain_denoise,light,0.8517,attacked
+sd21_human_1_v1.png,film_emulation_lut (strength: very_strong),film_emulation_lut,very_strong,0.8173,attacked
+sd21_human_2_v2.png,print_rescan + natural_color_cues (strength: very_strong),print_rescan + natural_color_cues,very_strong,0.8567,attacked
+sd21_human_3_v1.png,glcm_texture_matching (strength: strong),glcm_texture_matching,strong,0.9188,attacked
+sd21_object_1_v1.png,print_rescan (strength: strong),print_rescan,strong,0.8609,attacked
+sd21_object_2_v3.png,none — unmodified generated image (already classified REAL),,,,baseline_real
+sd21_object_3_v1.png,print_rescan (strength: very_strong),print_rescan,very_strong,0.8437,attacked
+sd21_satellite_1_v2.png,upscale_grain_denoise + natural_color_cues (strength: very_strong),upscale_grain_denoise + natural_color_cues,very_strong,0.8052,attacked
+sd21_satellite_2_v1.png,perlin_grain_application (strength: moderate),perlin_grain_application,moderate,0.8483,attacked
+sd21_satellite_3_v3.png,print_rescan + phone_camera_look (strength: moderate),print_rescan + phone_camera_look,moderate,0.8511,attacked
+sd21_scene_1_v1.png,none — unmodified generated image (no quality-passing output classified REAL),,,,unbeaten
+sd21_scene_2_v2.png,print_rescan + awkward_composition (strength: light),print_rescan + awkward_composition,light,0.87,attacked
+sd21_scene_3_v3.png,upscale_grain_denoise_awkward_composition_white_balance_correction_phone_camera_look (strength: light),upscale_grain_denoise_awkward_composition_white_balance_correction_phone_camera_look,light,0.7775,attacked

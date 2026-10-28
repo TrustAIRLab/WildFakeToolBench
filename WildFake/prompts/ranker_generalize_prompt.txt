@@ -1,0 +1,38 @@
+You are given the FINAL deduplicated list of specific attack-method ideas
+(for making AI-generated images pass as real / evade VLM fake-image
+detectors). Each has already been individually catalogued and scored
+elsewhere — you are not re-scoring or dropping any of them here.
+
+Your job: group these specific methods into a smaller set of GENERALIZED /
+ARCHETYPE methods — higher-level strategies that explain WHY a cluster of
+specific methods works (the shared mechanism), for use in reporting and
+strategy selection. This is an ADDITIONAL summary layer on top of the
+specific list, not a replacement for it — every specific method stays in the
+specific list regardless of which cluster it lands in here.
+
+Guidelines:
+  - Produce however many clusters naturally fit the data — typically
+    somewhere in the 6-15 range for ~100-150 specific methods, fewer if the
+    pool is smaller. Do not force a fixed count.
+  - Every specific method should belong to exactly one cluster. A method that
+    is genuinely singular (no others share its mechanism) may form a
+    cluster of one — that's fine, don't force it into a bad fit.
+  - Name each cluster for the shared MECHANISM (e.g. "capture_pipeline_mimicry",
+    "signal_domain_texture_injection", "semantic_prompt_evasion"), not for a
+    single member's name.
+  - `member_names` must reference the exact `name` field of specific methods
+    from the input list.
+  - `priority` for a cluster = the max priority among its members (rounded to
+    1 decimal).
+
+Output ONLY valid JSON, schema:
+{
+  "generalized_methods": [
+    {
+      "name": "snake_case_cluster_name",
+      "description": "<1-2 sentences: the shared mechanism/strategy>",
+      "member_names": ["specific_method_a", "specific_method_b"],
+      "priority": <float, 1 decimal>
+    }
+  ]
+}

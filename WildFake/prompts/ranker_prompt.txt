@@ -1,0 +1,86 @@
+You are cataloguing IDEAS for making AI-generated images pass as real /
+evade VLM fake-image detectors, mined from community posts and blogs.
+
+Each idea is a *concept + mechanism*, NOT a finished recipe. A downstream coding
+agent will implement each surviving idea into an image tool. Your job is to
+lightly dedup, classify, score, and annotate — NOT to consolidate everything
+into a handful of generic buckets.
+
+You are seeing ONE BATCH of a larger candidate pool (other batches are
+processed separately and merged later). Work only within this batch.
+
+DEDUPLICATION POLICY — BE CONSERVATIVE. Only merge two candidates when they
+describe the SAME concrete technique in essentially the same way (e.g. two
+posts both saying "overlay Portra 400 grain scan texture at low opacity").
+Do NOT merge candidates just because they share a broad theme or category
+(e.g. "film grain" and "sensor noise" and "print re-scan" are THREE distinct
+methods, not one "add texture" method — keep them separate even though all
+three are about signal-domain realism). When in doubt, keep them as separate
+entries. A downstream pass will catch any remaining duplicates across batches.
+
+FILTERING POLICY — judge by NOVELTY and FEASIBILITY, not by complexity.
+  - Single-step ideas are allowed. Do NOT drop an idea just because it is one
+    operation.
+  - The ONLY ideas to drop are: research-grade / non-implementable ones (e.g.
+    "train a new GAN", "collect a huge dataset and fine-tune"), pure verbatim
+    duplicates within this batch, and off-topic content. Everything an LLM
+    coding agent could plausibly build stays in, as its OWN entry.
+
+For each surviving idea:
+
+1. CLASSIFY with a method_type:
+   - "generative" : uses a generative model (T2I/img2img prompt, negative prompt,
+                    low-denoise regen, LoRA/checkpoint swap, diffusion inpainting)
+   - "numeric"    : deterministic signal/pixel op or pipeline (grain, compression,
+                    sensor noise, color/tone, geometric, capture-pipeline mimicry)
+   - "hybrid"     : explicitly combines numeric + generative
+   Also keep a finer sub_category tag for reference: one of
+   {post_processing, capture_pipeline, prompt_engineering, model_swap,
+    compositional, semantic_edit, metadata}.
+
+2. SCORE each idea (1=worst, 10=best):
+   - novelty     : how under-the-radar / fresh — how UNLIKELY a current detector
+                   was trained against it. Newer, niche, or creative ideas score
+                   high; well-known obvious moves score low.
+   - feasibility : how realistically an LLM coding agent can implement it as a tool
+                   (numeric ops + local generative-model calls are feasible;
+                   anything requiring new model training is NOT).
+   - expected_efficacy : how likely it flips a detector verdict fake->real, judged
+                   from the strength/specificity of the community evidence.
+
+3. PRIORITY = 0.45*novelty + 0.45*feasibility + 0.10*expected_efficacy
+   (novelty and feasibility are the primary criteria).
+
+4. Draft an `implementation_hint` (<= 2 sentences) describing what a tool built
+   from this idea would do at apply time — enough for a coding agent to start
+   from, without forcing exact numbers. Include a `params_sketch` of the key
+   knobs the agent would expose (names + rough ranges/types).
+
+Note: the released suite already implements these as tools (lower novelty if an
+idea duplicates one exactly): jpeg_compression, color_adjust, blur_sharpen, downscale_upscale, film_grain, phone_camera_look, print_rescan, vignette, chromatic_aberration, upscale_grain_denoise, sensor_noise_prnu, lens_distortion, shadow_highlight, natural_color_correction, photo_texture_blend, iterative_texture, surface_naturalize, background_realism.
+
+Output ONLY valid JSON, schema:
+{
+  "methods": [
+    {
+      "name": "snake_case_name",
+      "method_type": "generative" | "numeric" | "hybrid",
+      "sub_category": "...",
+      "idea": "<1 sentence concept>",
+      "mechanism": "<1 sentence: why it looks real / why detector misses it>",
+      "description": "<1-2 sentences>",
+      "evidence_post_ids": ["abc", "def"],
+      "evidence_quotes": ["...", "..."],
+      "scores": {
+        "novelty": <int>,
+        "feasibility": <int>,
+        "expected_efficacy": <int>
+      },
+      "priority": <float, 1 decimal>,
+      "duplicates_v1_tool": "<tool_name or null>",
+      "implementation_hint": "...",
+      "params_sketch": {"param1": "type/range", "param2": "type/range"}
+    }
+  ]
+}
+</content>
